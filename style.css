@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: "Gruppo", sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    padding: 08%;
+    text-transform: capitalize;
+}
+.content{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.content h3{
+    font-size: 35px;
+    color: rgb(12, 11, 11);
+    letter-spacing: 3px;
+}
+.content h3 span{
+    color: rgb(239, 111, 111);
+    font-size: 50px;
+    font-weight: bold;
+}
+.content p{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(1, 1, 1);
+    letter-spacing: 1px;
+}
+.launch-time{
+    display: flex;
+    gap: 10px;
+}
+.launch-time div{
+    flex-basis: 80px;
+    
+}
+.launch-time div p{
+    font-size: 20px;
+    }
+
+span{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.day{
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    height: 60px;
+    background-color: rgb(231, 115, 104);
+}
+.hour{
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    height: 60px;
+    background-color: rgb(119, 231, 104);
+}
+.minute{
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    height: 60px;
+    background-color: rgb(106, 104, 231);
+}
+.second{
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    height: 60px;
+    background-color: rgb(231, 104, 212);
+}
+.content button{
+    height: 40px;
+    width: 150px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: lighter;
+    border-radius: 2px;
+    background-color: rgb(244, 237, 237);
+    color: rgb(249, 131, 131);
+    border: 1px solid rgb(16, 15, 15);
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.content button:hover{
+    background-color: rgb(239, 234, 234);
+    color: black;
+}
+
+
+/* rocket.png */
+.rocket{
+    position: absolute;
+    width: 20%;
+    right: 430px;
+    bottom: 0px;
+    animation: rocket 5s linear infinite ;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 100%;
+        opacity: 10px;
+    }
+
+}
